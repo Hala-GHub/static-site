@@ -10,11 +10,14 @@
       border-radius: 8px;
       font-size: 20px;
       text-align: center;
+      margin-bottom: 10px;
     }
+
     .success-box {
       border-color: green;
       font-weight: bold;
     }
+
     #magic-button {
       margin-top: 10px;
       padding: 10px 20px;
@@ -37,7 +40,7 @@
 
       function changeMessage() {
         box.textContent = "You clicked! I have been changed by JavaScript!";
-        box.style.backgroundColor = "lightgreen";
+        box.style.backgroundColor = "lightgreen";   // final green look
         box.classList.add("success-box");
       }
 
