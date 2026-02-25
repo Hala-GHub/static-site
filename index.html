@@ -11,12 +11,10 @@
       font-size: 20px;
       text-align: center;
     }
-
     .success-box {
       border-color: green;
       font-weight: bold;
     }
-
     #magic-button {
       margin-top: 10px;
       padding: 10px 20px;
@@ -25,29 +23,25 @@
     }
   </style>
 </head>
-
 <body>
   <h1>My Website</h1>
   <p>This is a story of Web Development</p>
 
-  <div id="message-box">
-    Hello! I am unchanged.
-  </div>
-
+  <div id="message-box">Hello! I am unchanged.</div>
   <button id="magic-button">Click me!</button>
 
   <script>
-    function changeMessage() {
-      box.textContent = "You clicked! I have been changed by JavaScript!";
-      box.style.backgroundColor = "lightgreen";
-      box.classList.add("success-box");
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      const button = document.getElementById("magic-button");
+      const box = document.getElementById("message-box");
 
-    const button = document.getElementById("magic-button");
-    const box = document.getElementById("message-box");
+      function changeMessage() {
+        box.textContent = "You clicked! I have been changed by JavaScript!";
+        box.style.backgroundColor = "lightgreen";
+        box.classList.add("success-box");
+      }
 
-    button.addEventListener("click", function () {
-      changeMessage();
+      button.addEventListener("click", changeMessage);
     });
   </script>
 </body>
