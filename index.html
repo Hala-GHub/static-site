@@ -1,1 +1,32 @@
-Hello and  Welcome to python for web
+<head>
+<metacharset="UTF-8">
+<metaname="viewport"content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+<link rel="stylesheet"href="style.css">
+<script src="script.js"defer>
+</script> 
+</head>
+#message-box{padding:20px;
+background-color: lightyellow;
+border:2px solid#ccc;
+border-radius:8px;
+font-size:20px;text-align: center;}
+/* This class is added by JavaScript when the button is clicked */
+.success-box
+{border-color: green;font-weight: bold;}
+#magic-button
+{margin-top:10px;
+padding:10px 20px;
+font-size:20px;
+  cursor: pointer;}
+function
+changeMessage() {
+// Change the text inside the div
+box.textContent="
+You clicked! I have been changed by JavaScript!";
+// Change the background color using inline CSS
+box.style.backgroundColor=
+"lightgreen";
+// Add a CSS class (defined in style.css)
+box.classList.
+add("success-box");}
